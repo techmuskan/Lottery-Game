@@ -1,0 +1,57 @@
+.lottery-container {
+  background: white;
+  border-radius: 15px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  width: 350px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.lottery-container:hover {
+  transform: scale(1.05);
+}
+
+/* Button */
+.lottery-btn {
+  background: #4cafef;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.lottery-btn:hover {
+  background: #0077cc;
+  transform: translateY(-2px);
+}
+
+/* Generated number display */
+.lottery-number {
+  margin: 25px 0 15px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+  letter-spacing: 4px;
+}
+
+/* Message styling */
+.lottery-message {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Winning message */
+.win {
+  color: #28a745;
+}
+
+/* Losing message */
+.lose {
+  color: #e63946;
+}
