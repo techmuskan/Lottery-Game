@@ -1,12 +1,85 @@
-# React + Vite
+# 🎲 Lottery-Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun and interactive lottery game built with **React** by [techmuskan](https://github.com/techmuskan). Players enter a three-digit ticket, and if the sum of the digits equals **15**, they win. Otherwise, it’s a loss—but always a good time!
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎯 Input a 3-digit lottery ticket
+- 🔢 Automatic digit sum calculation
+- 🏆 Win if the sum is exactly 15
+- ❌ Lose otherwise
+- ⚡ Instant result display
+- 🎨 Clean and responsive UI
 
-## Expanding the ESLint configuration
+## 🛠️ Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (Functional Components + Hooks)
+- JavaScript
+- CSS / Styled Components
+- Vite or Create React App
+
+## 🚀 Getting Started
+
+### Clone the repo
+
+```bash
+git clone https://github.com/techmuskan/Lottery-Game.git
+cd Lottery-Game
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the app
+
+```bash
+npm start
+```
+
+## 🎮 How to Play
+
+1. Enter a 3-digit number (e.g., `456`)
+2. Click the “Check” button
+3. The app calculates the sum of the digits: `4 + 5 + 6 = 15`
+4. If the sum is **15**, you win! 🎉  
+   Otherwise, you lose 😢
+
+## 📁 Project Structure
+
+```
+Lottery-Game/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   └── LotteryForm.jsx
+│   ├── App.jsx
+│   ├── index.js
+│   └── styles.css
+├── README.md
+└── package.json
+```
+
+## 🧠 Logic Overview
+
+```js
+const checkWin = (ticket) => {
+  const digits = ticket.split('').map(Number);
+  const sum = digits.reduce((acc, val) => acc + val, 0);
+  return sum === 15;
+};
+```
+
+## 📌 Customization Ideas
+
+- Add confetti animation for wins
+- Store past attempts in localStorage
+- Add sound effects
+- Make it mobile-friendly
+
+## 👩‍💻 Author
+
+Made with ❤️ by [techmuskan](https://github.com/techmuskan)
